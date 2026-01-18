@@ -1,0 +1,5 @@
+.logo-tienda{
+    display: flex;
+    justify-content: flex-start;
+    width: 150px;
+}
