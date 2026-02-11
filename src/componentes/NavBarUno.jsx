@@ -1,12 +1,13 @@
 import '../assets/css/NavBarUno.css'
+import { NavLink } from 'react-router-dom'
 
 const NavBarUno = () =>{
     return(
         <nav className='links-container'>
-            <a className='links-nav' href="">No Gi</a>
-            <a className='links-nav' href="">Gi</a>
-            <a className='links-nav' href="">Clases</a>
-            <a className='links-nav' href="">Relacionados</a>
+            <NavLink className='links-nav' to="/secciones/nogi">No Gi</NavLink>
+            <NavLink className='links-nav' to="/secciones/gi">Gi</NavLink>
+            <NavLink className='links-nav' to="/secciones/clases">Clases</NavLink>
+            <NavLink className='links-nav' to="/secciones/relacionados">Relacionados</NavLink>
         </nav>
     )
 }
